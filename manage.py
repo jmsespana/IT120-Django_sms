@@ -16,9 +16,9 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
 
-    # Automatically open the admin page in the browser when running the server
-    if 'runserver' in sys.argv:
-        webbrowser.open('http://127.0.0.1:8000/admin/')
+    # # Automatically open the admin page in the browser when running the server
+    # if 'runserver' in sys.argv:
+    #     webbrowser.open('http://127.0.0.1:8000/admin/')
 
     execute_from_command_line(sys.argv)
 
