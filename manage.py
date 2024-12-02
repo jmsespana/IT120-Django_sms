@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+import webbrowser  # Import the webbrowser module
 
 def main():
     """Run administrative tasks."""
@@ -15,6 +15,11 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+
+    # Automatically open the admin page in the browser when running the server
+    if 'runserver' in sys.argv:
+        webbrowser.open('http://127.0.0.1:8000/admin/')
+
     execute_from_command_line(sys.argv)
 
 
