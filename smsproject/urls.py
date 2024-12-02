@@ -5,5 +5,6 @@ from django.http import HttpResponseRedirect
 
 
 urlpatterns = [
+    path('', lambda request: HttpResponseRedirect('/admin/')),
     path('admin/', admin.site.urls),
 ]
