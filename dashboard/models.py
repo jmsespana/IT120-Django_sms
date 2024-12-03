@@ -13,9 +13,6 @@ class Message(models.Model):
         return self.name
 
     def send_sms(self, body):
-        """
-        Helper method to send an SMS message.
-        """
         account_sid = settings.TWILIO_ACCOUNT_SID
         auth_token = settings.TWILIO_AUTH_TOKEN
         client = Client(account_sid, auth_token)
