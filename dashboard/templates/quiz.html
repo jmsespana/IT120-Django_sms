@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
+    <title>SnapSMS Quiz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -94,13 +94,13 @@
 <body>
 
     <div class="container">
-        <h1>Answer the Question to Continue</h1>
-        <p class="question">Who developed the theory of relativity?</p>
+        <h1>SnapSMS Quiz</h1>
+        <p class="question">What service does SnapSMS use to send SMS messages?</p>
         <div class="answers">
-            <button class="button" onclick="checkAnswer('Albert Einstein')">Albert Einstein</button>
-            <button class="button" onclick="checkAnswer('Isaac Newton')">Isaac Newton</button>
-            <button class="button" onclick="checkAnswer('Galileo Galilei')">Galileo Galilei</button>
-            <button class="button" onclick="checkAnswer('Nikola Tesla')">Nikola Tesla</button>
+            <button class="button" onclick="checkAnswer('Twilio')">Twilio</button>
+            <button class="button" onclick="checkAnswer('SendGrid')">SendGrid</button>
+            <button class="button" onclick="checkAnswer('Firebase')">Firebase</button>
+            <button class="button" onclick="checkAnswer('Plivo')">Plivo</button>
         </div>
         <p id="message"></p>
         <p id="sadEmoji" class="sad-emoji" style="display: none;">😞</p>
@@ -108,7 +108,7 @@
 
     <script>
         function checkAnswer(selectedAnswer) {
-            const correctAnswer = 'Albert Einstein';
+            const correctAnswer = 'Twilio';
             const message = document.getElementById('message');
             const sadEmoji = document.getElementById('sadEmoji');
 
